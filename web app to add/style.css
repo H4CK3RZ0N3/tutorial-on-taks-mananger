@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+h1 {
+    color: #333;
+}
+
+.task-input {
+    display: flex;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+button.delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 4px 8px;
+}
+
+button.delete:hover {
+    background-color: #d32f2f;
+}
+
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+.completed::after {
+    content: "\2713"; /* Unicode tick mark */
+    margin-left: 10px;
+    color: #4CAF50;
+}
